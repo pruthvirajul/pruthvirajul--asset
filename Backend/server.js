@@ -7,9 +7,9 @@ const port = 3000;
 // PostgreSQL connection configuration
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'postgres',
     database: 'asset_management',
-    password: 'root',
+    password: 'admin321',
     port: 5432,
 });
 
@@ -169,5 +169,5 @@ app.delete('/api/requests/clear', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://16.170.254.176:${port}`);
 });
